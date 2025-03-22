@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+
+.wrapper {
+  background-color: hsl(0, 0%, 100%);
+  width: 70%;
+  border-radius: 5px 5px 50px 5px;
+  padding: 40px;
+  margin: 25px;
+  font-family: "Poppin", sans-serif;
+}
+
+.header {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .date-box {
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.header .date-box .msg {
+  font-size: 10px;
+  margin-top: 3px;
+  font-style: italic;
+  padding-top: 3px;
+  display: none;
+}
+
+.error-msg {
+  font-size: 10px;
+  margin-top: 3px;
+  font-style: italic;
+  font-weight: 100;
+  padding-top: 3px;
+  color: red;
+  display: none;
+}
+.error-msg-active {
+  display: block;
+}
+
+.header label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.error-label {
+  display: block;
+  color: red;
+}
+
+.header input {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid rgb(225, 216, 216);
+  border-radius: 5px;
+  font-weight: bolder;
+  outline: none;
+}
+.header input.error-border {
+  border: 1px solid red;
+}
+
+.header input:active {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.middle-design {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon-box {
+  background-color: hsl(259, 100%, 65%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid rgb(233, 225, 225);
+}
+
+main {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+main .year-box {
+  display: flex;
+  align-items: center;
+}
+
+.year-box span {
+  color: hsl(259, 100%, 65%);
+  font-size: 5rem;
+  font-weight: bold;
+  padding-right: 6px;
+  transition: all 0.5s ease-in-out; /* Add transition */
+}
+
+.year-box p {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    width: 200px;
+  }
+
+  .header .date-box .year-input,
+  .header .date-box .month-input,
+  .header .date-box .day-input {
+    width: 70px;
+  }
+
+  .icon-box {
+    left: 40%;
+  }
+
+  .year-box p {
+    font-size: 3.5rem;
+  }
+}
