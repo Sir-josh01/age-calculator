@@ -46,8 +46,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Sir-josh01/age-calculator)
+- Live Site URL: [Add live site URL here](https://sir-josh01.github.io/age-calculator/)
 
 ## My process
 - structure by HTML, designs and color by CSS and javascript handles the functionality and animation.
