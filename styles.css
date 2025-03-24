@@ -224,6 +224,10 @@ main .year-box {
     align-items: center;
   }
 
+  .username-input {
+    width: 100%;
+  }
+
   .header .date-box {
     width: 50%;
     margin-right: 5px;
@@ -257,11 +261,11 @@ main .year-box {
   }
 
   .year-box span {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .year-box p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .Display {
