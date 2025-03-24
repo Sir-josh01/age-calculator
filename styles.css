@@ -23,8 +23,25 @@ body {
   font-family: "Poppin", sans-serif;
 }
 
+.name-input {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  font-family: papyrus;
+  align-self: flex-start;
+  min-width: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.wrapper .name-input::placeholder {
+  color: rgb(156, 152, 152);
+}
+
 .header {
-  max-width: 500px;
+  width: 500px;
   display: flex;
   justify-content: space-around;
 }
@@ -105,12 +122,20 @@ body {
   cursor: pointer;
 }
 
+.icon-box:active {
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 5);
+  border: 2px solid white;
+}
+.icon-box:hover {
+  border: 2px solid white;
+}
+
 hr {
   border: 1px solid rgb(233, 225, 225);
 }
 
 main {
-  margin-top: 10px;
+  margin-top: 30px;
   font-style: italic;
 }
 
@@ -124,7 +149,7 @@ main .year-box {
   font-size: 5rem;
   font-weight: bold;
   padding-right: 6px;
-  transition: all 0.5s ease-in-out; /* Add transition */
+  transition: all 0.5s ease-in-out;
 }
 
 .year-box p {
@@ -134,22 +159,92 @@ main .year-box {
   padding: 0;
 }
 
-@media screen and (max-width: 550px) {
+@media (min-width: 501px) and (max-width: 1440px) {
+  .wrapper {
+    width: 70%;
+  }
+
   .header {
-    width: 200px;
+    width: 100%;
+  }
+
+  .header .date-box {
+    width: 35%;
   }
 
   .header .date-box .year-input,
   .header .date-box .month-input,
   .header .date-box .day-input {
-    width: 70px;
+    width: 100%;
   }
 
-  .icon-box {
-    left: 40%;
+  .header input.error-border {
+    border: 1px solid red;
+  }
+
+  .header input:active {
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .middle-design {
+    margin-top: 20px;
   }
 
   .year-box p {
-    font-size: 3.5rem;
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: 60%;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .date-box {
+    width: 50%;
+    margin-right: 5px;
+    margin-bottom: 30px;
+  }
+
+  .header input {
+    width: 40px;
+  }
+
+  .header .date-box .year-input,
+  .header .date-box .month-input,
+  .header .date-box .day-input {
+    width: 100%;
+  }
+
+  .middle-design {
+    margin-top: 20px;
+  }
+
+  .icon-box {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .year-box span {
+    font-size: 2.5rem;
+  }
+
+  .year-box p {
+    font-size: 2rem;
   }
 }
