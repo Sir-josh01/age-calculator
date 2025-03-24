@@ -23,7 +23,7 @@ body {
   font-family: "Poppin", sans-serif;
 }
 
-.name-input {
+.username-input {
   margin-bottom: 15px;
   border-radius: 4px;
   border: none;
@@ -105,7 +105,19 @@ body {
 .middle-design {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
   position: relative;
+}
+
+.Display {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 4rem;
+  font-family: papyrus;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .icon-box {
@@ -135,7 +147,7 @@ hr {
 }
 
 main {
-  margin-top: 30px;
+  margin-top: 20px;
   font-style: italic;
 }
 
@@ -194,6 +206,10 @@ main .year-box {
   .year-box p {
     font-size: 3.6rem;
   }
+
+  .Display {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -246,5 +262,10 @@ main .year-box {
 
   .year-box p {
     font-size: 2rem;
+  }
+
+  .Display {
+    font-size: 1rem;
+    text-align: center;
   }
 }

@@ -115,6 +115,12 @@ checker.addEventListener("click", () => {
     dayAge += prevMonthDate.getDate();
   }
 
+  const userButton = document.querySelector('.username-input')
+  userInput = userButton.value
+
+  document.querySelector('.Display')
+    .innerHTML = `Dear ${userInput}, Your current age is:`
+
   animateNumbers(yearAge, monthAge, dayAge);
 
   yearDisplay.innerHTML = yearAge;
