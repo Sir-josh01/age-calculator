@@ -30,7 +30,7 @@ yearInput.addEventListener("input", (event) => {
 checker.addEventListener("click", () => {
   const date = new Date();
   const currentYear = date.getFullYear();
-  const currentMonth = date.getMonth();
+  const currentMonth = date.getMonth() + 1;
   const currentDay = date.getDate();
 
   const yearValue = Number(yearInput.value);
