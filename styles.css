@@ -42,8 +42,8 @@ body {
 
 .header {
   width: 500px;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
 }
 
 .header .date-box {
@@ -178,6 +178,7 @@ main .year-box {
 
   .header {
     width: 100%;
+    display: flex;
   }
 
   .username-input {
@@ -222,10 +223,10 @@ main .year-box {
   }
 
   .header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
   }
 
   .username-input {
@@ -245,7 +246,7 @@ main .year-box {
   .header .date-box .year-input,
   .header .date-box .month-input,
   .header .date-box .day-input {
-    width: 100%;
+    width: 50%;
   }
 
   .middle-design {

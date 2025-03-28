@@ -38,6 +38,10 @@ checker.addEventListener("click", () => {
   const dayValue = Number(dayInput.value);
 
   // Error Checking and Reset
+    dayInput.classList.remove("error-border");
+    monthInput.classList.remove("error-border");
+    yearInput.classList.remove("error-border");
+
   document
     .querySelector(".day-input + .error-msg")
     .classList.remove("error-msg-active");
@@ -137,7 +141,7 @@ function animateNumbers(yearAge, monthAge, dayAge) {
   let currentMonths = 0;
   let currentDays = 0;
 
-  const animationDuration = 1500; // Animation duration in milliseconds
+  const animationDuration = 1500; // in milliseconds
   const frameRate = 30; // Frames per second
 
   const yearIncrement = yearAge / (animationDuration / frameRate);
@@ -170,5 +174,5 @@ function animateNumbers(yearAge, monthAge, dayAge) {
       monthsSpan.textContent = monthAge;
       daysSpan.textContent = dayAge;
     }
-  }, 1500 / frameRate); // Update every frame
+  }, 1500 / frameRate); 
 }
